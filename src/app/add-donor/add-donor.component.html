@@ -1,0 +1,26 @@
+<div class="container">
+    <form class="example-form" [formGroup]="donorForm" (ngSubmit)="onFormSubmit(donorForm.value)">
+        <h2>Input your data then save it.</h2>
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="Your name" formControlName="name" [errorStateMatcher]="matcher">
+            <mat-error>
+            <span *ngIf="!donorForm.get('name').valid && donorForm.get('name').touched">Please enter your name</span>
+            </mat-error>
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="Your Phone" formControlName="phone" [errorStateMatcher]="matcher">
+            <mat-error>
+            <span *ngIf="!donorForm.get('phone').valid && donorForm.get('phone').touched">Please enter your phone</span>
+            </mat-error>
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="Your email" formControlName="email" [errorStateMatcher]="matcher">
+            <mat-error>
+            <span *ngIf="!donorForm.get('email').valid && donorForm.get('email').touched">Please enter your email</span>
+            </mat-error>
+        </mat-form-field>
+        <div class="button-row">
+            <button type="submit" [disabled]="!donorForm.valid" mat-fab color="primary"><mat-icon>save</mat-icon></button>
+        </div>
+    </form>
+</div>

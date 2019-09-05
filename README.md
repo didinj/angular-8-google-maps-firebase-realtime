@@ -1,4 +1,6 @@
-# AngularMaps
+# Angular 8 Google Maps Firebase Realtime Blood Donor App
+
+You can read the full tutorial of [Angular 8 Google Maps Firebase Realtime Blood Donor App]().
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.2.
 
