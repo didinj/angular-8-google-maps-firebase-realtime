@@ -1,6 +1,6 @@
 # Build a Real-Time Blood Donor App with Angular 20, Google Maps, and Firebase
 
-Read full article [here]().
+Read full article [here](https://www.djamware.com/post/5d70d6608ff935a40f438f3a/build-a-realtime-blood-donor-app-with-angular-20-google-maps-and-firebase).
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.0.
 
