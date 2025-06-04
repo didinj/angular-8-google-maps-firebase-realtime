@@ -1,0 +1,4 @@
+<google-map [height]="'500px'" [width]="'100%'" [center]="center" [zoom]="zoom">
+  <map-marker *ngFor="let donor of donors" [position]="{ lat: donor.lat, lng: donor.lng }" [label]="donor.name">
+  </map-marker>
+</google-map>
